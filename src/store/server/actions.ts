@@ -25,7 +25,7 @@ export const actions: ActionTree<ServerState, RootState> = {
                 client_name: 'mainsail',
                 version: rootState.packageVersion,
                 type: 'web',
-                url: 'https://github.com/mainsail-crew/mainsail',
+                url: 'https://github.com/XuanQing950/mainsail-test',
             })
             commit('setConnectionId', connection.connection_id)
         } catch (e: any) {
