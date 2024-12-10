@@ -193,7 +193,7 @@ export const getDefaultState = (): GuiState => {
                 showHiddenFiles: false,
                 hideBackupFiles: false,
                 currentPath: '',
-                rootPath: 'config',
+                rootPath: 'macros',
                 selectedFiles: [],
             },
             extruder: {

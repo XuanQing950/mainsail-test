@@ -936,8 +936,9 @@ export default class ConfigFilesPanel extends Mixins(BaseMixin, ThemeMixin) {
     get registeredDirectoriesSelectItems() {
         const items = this.registeredDirectories.filter((dir: string) => !hiddenRootDirectories.includes(dir)).sort()
         if (!this.existConfigRoot) items.push('config')
+        var filteredItems = items.filter(directory => directory !== 'config');
 
-        return items
+        return filteredItems
     }
 
     get root() {
